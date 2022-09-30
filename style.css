@@ -5,12 +5,27 @@
     scroll-behavior: smooth;
 }
 
+:root{
+    --dark-color-1: #001A38;
+    --dark-color-2: #002E4E;
+    --dark-color-3: #003367;
+    --dark-color-4: #171D20;
+    --dark-color-5: #1E2529;
+    --dark-color-6: #2F3133;
+    --light-color-1: #ACDDDE;
+    --light-color-2: #CAF1DE;
+    --light-color-3: #E1F8DC;
+    --light-color-4: #FEF8DD;
+    --light-color-5: #FFE7C7;
+    --light-color-6: #F7D8B8;
+}
+
 /* body{
      background-image: url("images/bg.jpg") ; 
 } */
 
 nav{
-    background-color: #040b14;
+    background-color: var(--dark-color-4);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -20,6 +35,7 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
+    border-right: 2px solid white;
 }
 
 .nav-brand{
@@ -52,10 +68,12 @@ nav>ol{
 
 #home{
     padding: 100px 50px 50px 50px;
-    width: 100%;
+    width: 83%;
+    margin-left: 17%;
     min-height: 100%;
     height: fit-content;
-    background-image: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62));
+    background-color: var(--dark-color-1);
+    /* background-image: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62)); */
     /* background-image: url("images/bg.png"); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -108,6 +126,9 @@ nav>ol{
 
 #intro{
     padding: 60px 200px;
+    background-color: var(--dark-color-6);
+    width: 83%;
+    margin-left: 17%;
 }
 
 #intro > h1{
@@ -123,12 +144,15 @@ nav>ol{
 
 #skills{
     padding: 60px 200px;
-    background: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62));
-    background-size: 100% 100%;
+    /* background: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62)); */
+    /* background-size: 100% 100%; */
+    background-color: var(--dark-color-1);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 83%;
+    margin-left: 17%;
 }
 
 #skills > h1{
@@ -154,13 +178,37 @@ nav>ol{
 
 
 #projects{
-    padding: 20px;
+    padding: 50px;
+    background-color: var(--dark-color-5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    width: 83%;
+    margin-left: 17%;
+}
+
+#projects > h1{
+    color: white;
+    font-family: Calibri;
+    font-size: 2.5rem;
+}
+
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
 }
 
 #achievements{
     padding: 50px;
-    background: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62));
-    background-size: 100% 100%;
+    /* background: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62)); */
+    /* background-size: 100% 100%; */
+    background-color: var(--dark-color-1);
+    width: 83%;
+    margin-left: 17%;
 }
 
 #achievements > h1{
@@ -182,36 +230,87 @@ nav>ol{
     padding: 20px;
     border-radius: 20px;
     background-color: white;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     gap: 8px;
+    border: 2px solid black;
 }
 
-.achievement-image{
+.card-image{
     height: 300px;
     width: 300px;
 }
 
-.achievement-title{
+.card-title{
     font-family: Calibri;
     font-size: 1.25rem;
 }
 
-.rank{
+.card-details{
     font-family: Calibri;
     font-size: 1rem;
 }
 
+#switch{
+    position: absolute;
+    top:0;
+    right:10px;
+}
 
-/* @media only screen and (max-width:1080px) {
+#switch:checked ~ #home{
+    background: #040b14;
+}
+
+@media only screen and (max-width:1080px) {
     nav{
+        width: 100%;
+        height: 50px;
+        top:0;
         flex-direction: row;
+    }
+    nav>ol{
+        display: none;
+    }
+
+    #home{
+        width: 100%;
+        margin-left: 0;
+        overflow-x: auto;
+        padding: 70px 60px 20px 60px;
+        min-height: max-content;
+    }
+
+    #intro{
+        width: 100%;
+        margin-left: 0;
+        overflow-x: auto;
+        padding: 60px;
+    }
+
+    #projects{
+        width: 100%;
+        margin-left: 0;
+        overflow-x: auto;
+        padding: 60px;
+    }
+
+    #skills{
+        width: 100%;
+        margin-left: 0;
+        overflow-x: auto;
+        padding: 60px;
+    }
+
+    #achievements{
+        width: 100%;
+        margin-left: 0;
+        overflow-x: auto;
     }
 
 
     
 
-} */
+}
 

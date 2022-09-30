@@ -4,10 +4,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    
     <nav>
-      <span class="nav-brand"
-        ><a href="#home" class="nav-link">Ashutosh</a></span
-      >
+      <span class="nav-brand"><a href="#home" class="nav-link">Ashutosh</a></span>
       <ol>
         <li class="nav-item"><a href="#intro" class="nav-link">Intro</a></li>
         <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
@@ -17,8 +16,10 @@
         </li>
         <li class="nav-item"><a href="#intro" class="nav-link">Contacts</a></li>
       </ol>
+      
     </nav>
-    <div class="content">
+   
+      <input type="checkbox" id="switch">
       <section id="home">
         <div class="home-content">Hi There! <br />I'm Ashutosh</div>
         <div class="man-with-comp-container">
@@ -67,22 +68,40 @@
       </section>
       <section id="projects">
         <h1>Projects</h1>
+        <div class="projects-container">
+          <div class="card">
+            <img src="" alt="Matrix Calculator" class="card-image">
+            <span class="card-title">Matrix Calculator</span>
+          </div>
+          <div class="card">
+            <img src="" alt="Spotify Clone" class="card-image">
+            <span class="card-title">Spotify Clone</span>
+          </div>
+          <div class="card">
+            <img src="" alt="Matrix Calculator" class="card-image">
+            <span class="card-title">Matrix Calculator</span>
+          </div>
+          <div class="card">
+            <img src="" alt="Spotify Clone" class="card-image">
+            <span class="card-title">Spotify Clone</span>
+          </div>
+        </div>
       </section>
       <section id="achievements">
         <h1>Achievements</h1>
         <div class="achievements-container">
           <div class="card">
-            <img src="images/codemaze.webp" alt="CODEMAZE" class="achievement-image">
-            <span class="achievement-title">CODEMAZE</span>
+            <img src="images/codemaze.webp" alt="CODEMAZE" class="card-image">
+            <span class="card-title">CODEMAZE</span>
             <span class="rank">1st Position</span>
           </div>
           <div class="card">
-            <img src="images/prologue.webp" alt="PROLOGUR" class="achievement-image">
-            <span class="achievement-title">PROLOGUE</span>
-            <span class="rank">1st Position</span>
+            <img src="images/prologue.webp" alt="PROLOGUE" class="card-image">
+            <span class="card-title">PROLOGUE</span>
+            <span class="card-details">1st Position</span>
           </div>
         </div>
       </section>
-    </div>
+   
   </body>
 </html>
