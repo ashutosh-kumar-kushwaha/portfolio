@@ -278,8 +278,17 @@ nav>ol{
         justify-content: space-evenly;
     }
 
+    .nav-brand{
+        font-size: 7rem;
+    }
+
+    .hamburger{
+        font-size: 7rem;
+    }
+
     #home{
         width: 100%;
+        margin-top: 8vh;
         margin-left: 0;
         overflow-x: auto;
         /* padding: 70px 60px 20px 60px; */
