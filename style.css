@@ -28,7 +28,7 @@ nav{
     background-color: var(--dark-color-4);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 100%;
     width: 17%;
@@ -40,13 +40,13 @@ nav{
 
 .nav-brand{
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin: 15px 40px;
 }
 
 .nav-item{
     margin: 15px 20px;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
 
 .nav-link{
@@ -93,7 +93,7 @@ nav>ol{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 4rem;
     color: white;
     font-family: Calibri;
     padding: 7%;
@@ -124,7 +124,7 @@ nav>ol{
 }
 
 #intro{
-    padding: 5% 18%;
+    padding: 5% 7%;
     background-color: var(--dark-color-6);
     width: 83%;
     margin-left: 17%;
@@ -132,17 +132,17 @@ nav>ol{
 
 #intro > h1{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-family: Calibri;
     color: red;
 }
 
 #intro > p{
-    font: 1.2rem Calibri;
+    font: 1.8rem Calibri;
 }
 
 #skills{
-    padding: 5% 18%;
+    padding: 5% 7%;
     /* background: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62)); */
     /* background-size: 100% 100%; */
     background-color: var(--dark-color-1);
@@ -157,7 +157,7 @@ nav>ol{
 #skills > h1{
     color: white;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-family: Calibri;
 }
 
@@ -171,10 +171,9 @@ nav>ol{
 }
 
 .skills-image{
-    width: 200px;
-    height: 200px;
+    width: 280px;
+    height: 280px;
 }
-
 
 #projects{
     padding: 4%;
@@ -191,7 +190,7 @@ nav>ol{
 #projects > h1{
     color: white;
     font-family: Calibri;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .projects-container{
@@ -213,7 +212,7 @@ nav>ol{
 #achievements > h1{
     color: white;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-family: Calibri;
 }
 
@@ -222,7 +221,7 @@ nav>ol{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 4%;
 }
 
 .card{
@@ -244,12 +243,12 @@ nav>ol{
 
 .card-title{
     font-family: Calibri;
-    font-size: 1.25rem;
+    font-size: 1.8rem;
 }
 
 .card-details{
     font-family: Calibri;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 #switch{
@@ -273,9 +272,10 @@ nav>ol{
 @media only screen and (max-width:1080px) {
     nav{
         width: 100%;
-        height: 10vh;
+        height: 8vh;
         top:0;
         flex-direction: row;
+        justify-content: space-evenly;
     }
 
     #home{
@@ -323,7 +323,7 @@ nav>ol{
 
     .hamburger{
         display: inline-block;
-        font-size: 2rem;
+        font-size: 2.5rem;
         color: white;
     }
 
@@ -341,7 +341,7 @@ nav>ol{
     }
 
     #hamburger:checked ~ ol{
-        top: 10vh;
+        top: 8vh;
     }
 
     
