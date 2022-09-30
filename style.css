@@ -165,7 +165,6 @@ nav>ol{
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -279,7 +278,7 @@ nav>ol{
     }
 
     .nav-brand{
-        font-size: 7rem;
+        font-size: 3.5rem;
     }
 
     #home{
@@ -313,11 +312,19 @@ nav>ol{
         /* padding: 60px; */
     }
 
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+
     #skills{
         width: 100%;
         margin-left: 0;
         overflow-x: auto;
         /* padding: 60px; */
+    }
+
+    .skills-container{
+        grid-template-columns: 1fr;
     }
 
     #achievements{
@@ -326,9 +333,13 @@ nav>ol{
         overflow-x: auto;
     }
 
+    .achievements-container{
+        grid-template-columns: 1fr;
+    }
+
     .hamburger{
         display: inline-block;
-        font-size: 7rem;
+        font-size: 3.5rem;
         color: white;
     }
 
