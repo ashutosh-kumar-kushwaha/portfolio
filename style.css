@@ -324,7 +324,7 @@ nav>ol{
     }
 
     .skills-container{
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     #achievements{
@@ -334,7 +334,8 @@ nav>ol{
     }
 
     .achievements-container{
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        gap: 30px;
     }
 
     .hamburger{
@@ -354,6 +355,11 @@ nav>ol{
         align-items: center;
         background-color: var(--dark-color-2);
         margin:0;
+    }
+
+    .card-image{
+        width: 550px;
+        height: 550px;
     }
 
     #hamburger:checked ~ ol{
