@@ -47,6 +47,12 @@ nav{
 .nav-item{
     margin: 15px 20px;
     font-size: 1.8rem;
+    padding: 3px;
+}
+
+.nav-item:hover{
+    border: 2px solid white;
+    border-radius: 20px;
 }
 
 .nav-link{
@@ -58,6 +64,11 @@ nav>ol{
     list-style-type: none;
     font-family: Calibri, sans-serif;
     margin: 0 15px;
+}
+
+.profile-pic{
+    width: 150px;
+    border-radius: 100%;
 }
 
 .content{
@@ -72,7 +83,7 @@ nav>ol{
     margin-left: 17%;
     min-height: 100%;
     height: fit-content;
-    background-color: var(--dark-color-1);
+    background-color: var(--light-color-1);
     /* background-image: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62)); */
     /* background-image: url("images/bg.png"); */
     background-repeat: no-repeat;
@@ -127,7 +138,7 @@ nav>ol{
 
 #intro{
     padding: 5% 7%;
-    background-color: var(--dark-color-6);
+    background-color: var(--light-color-6);
     width: 83%;
     margin-left: 17%;
 }
@@ -142,14 +153,15 @@ nav>ol{
 #intro > p{
     font: 1.8rem Calibri;
     margin-top: 20px;
-    text-shadow: 0px 0px 10px white;
+    color: grey;
+    /* text-shadow: 0px 0px 10px white; */
 }
 
 #skills{
     padding: 5% 7%;
     /* background: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62)); */
     /* background-size: 100% 100%; */
-    background-color: var(--dark-color-1);
+    background-color: var(--light-color-1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,18 +181,19 @@ nav>ol{
     margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
-    row-gap: 20px;
+    column-gap: 100px;
+    row-gap: 100px;
 }
 
 .skills-image{
-    width: 280px;
-    height: 280px;
+    text-align: center;
+    width: auto;
+    height: 220px;
 }
 
 #projects{
     padding: 4%;
-    background-color: var(--dark-color-5);
+    background-color: var(--light-color-6);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -207,7 +220,7 @@ nav>ol{
     padding: 4%;
     /* background: linear-gradient(to right, rgb(15,12,41), rgb(48,43,99), rgb(36,36,62)); */
     /* background-size: 100% 100%; */
-    background-color: var(--dark-color-1);
+    background-color: var(--light-color-1);
     width: 83%;
     margin-left: 17%;
 }
@@ -244,6 +257,7 @@ nav>ol{
     width: 300px;
 }
 
+
 .card-title{
     font-family: Calibri;
     font-size: 1.8rem;
@@ -260,28 +274,32 @@ nav>ol{
     right:10px;
 }
 
+#switch:checked ~ .btn{
+    background-color: red;
+}
+
 #switch:checked ~ #home{
-    background: var(--light-color-1);
+    background: var(--dark-color-1);
 }
 
 #switch:checked ~ #intro{
-    background: var(--light-color-6);
+    background: var(--dark-color-6);
 }
 
 #switch:checked ~ #skills{
-    background: var(--light-color-1);
+    background: var(--dark-color-1);
 }
 
 #switch:checked ~ #projects{
-    background: var(--light-color-6);
+    background: var(--dark-color-5);
 }
 
 #switch:checked ~ #achievements{
-    background: var(--light-color-1);
+    background: var(--dark-color-1);
 }
 
 #switch:checked ~ #contacts{
-    background: var(--light-color-6);
+    background: var(--dark-color-5);
 }
 
 #hamburger{
@@ -292,13 +310,39 @@ nav>ol{
     display: none;
 }
 
+#switch{
+    display: none;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+.btn{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    /* position: fixed; */
+    position: fixed;
+    right:10px;
+    top:5px;
+    font-family: Calibri;
+    border: 2px solid black;
+}
+
+
 @media only screen and (max-width:1080px) {
     nav{
         width: 100%;
         height: 8vh;
         top:0;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+    .profile-pic{
+        display: none;
     }
 
     .nav-brand{
@@ -397,10 +441,21 @@ nav>ol{
     .card-details{
         font-size: 1.6rem;
     }
+}
 
-    
+@media only screen and (max-width: 720px) {
+    .skills-image{
+        height: 160px;
+        width: auto;
+    }    
 
-    
+    .skills-container{
+        column-gap: 20px;
+    }
 
+    .card-image{
+        height: 210px;
+        width: 210px;
+    }
 }
 
